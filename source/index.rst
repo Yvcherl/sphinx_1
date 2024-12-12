@@ -13,12 +13,15 @@ documentation for details.
 
 .. toctree::
    :maxdepth: 3
-   :caption: 导航:
+   :caption: 人工智能核心板
 
-   一级文件/index
+   产品系列/index
+   
+.. toctree::
+   :maxdepth: 3
+   :caption: 通用拓展板
 
-
-
+   通用拓展板系列/index
 
 
 
