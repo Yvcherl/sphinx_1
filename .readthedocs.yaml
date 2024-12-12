@@ -1,0 +1,21 @@
+# 版本要求，指定此配置文件所遵循的规范版本
+version: 2
+
+# 构建环境设置
+build:
+  # 操作系统环境，可以是 "ubuntu-20.04"、"ubuntu-22.04"等
+  os: ubuntu-22.04
+  # 构建工具，可以是 "sphinx"、"mkdocs"等
+  tools:
+    python: "3.12"
+python:
+  install:  
+   - requirements: requirements.txt
+
+
+# 文档格式设置部分
+
+sphinx:
+  # Sphinx配置文件的路径，默认为 "docs/conf.py"，如果你的配置文件位置不同，需要修改
+  configuration: docs/conf.py
+  
