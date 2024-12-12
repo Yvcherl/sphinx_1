@@ -17,5 +17,5 @@ python:
 
 sphinx:
   # Sphinx配置文件的路径，默认为 "docs/conf.py"，如果你的配置文件位置不同，需要修改
-  configuration: conf.py
+  configuration: source/conf.py
   
