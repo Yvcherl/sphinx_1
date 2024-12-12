@@ -6,9 +6,8 @@
 新牛派相关文档
 ===============================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+这是我们公司的网站：`公司主页 <http://www.nnewn.com/>`_。
+
 
 
 .. toctree::
