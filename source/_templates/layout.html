@@ -18,9 +18,10 @@
 {% endblock %}
 
 {% block sidebartitle %}
-<div style="background-color:#3578C6; padding:10px; text-align:center; border-radius:5px;">
+
+<div style=" padding:10px; text-align:center; border-radius:5px;">
     <!-- 图标链接 -->
-    <div style="display:flex; justify-content:space-around; align-items:center;">
+   {# <div style="display:flex; justify-content:space-around; align-items:center;">
         <a href="https://www.example1.com" target="_blank" title="主页">
             <img src="{{ pathto('_static/home.png', 1) }}" alt="Home" style="width:30px; height:30px;">
         </a>
@@ -36,18 +37,29 @@
         <a href="https://www.example4.com" target="_blank" title="PDF">
             <img src="{{ pathto('_static/pdf.png', 1) }}" alt="PDF" style="width:30px; height:30px;">
         </a>
-    </div>
+    </div> #}
     <!-- 标题部分 -->
-    <div style="margin-top:10px;">
-        <img src="{{ pathto('_static/nnewn.png', 1) }}" alt="牛新牛" style="height:50px;">
+    <div style="margin-top:10px; text-align: center;">
+        <!-- 图片部分 -->
+        <img src="_static/nnewn.png" alt="牛新牛" 
+             style="border-radius: 0; width: auto; height: auto; max-width: 100%; display: inline-block;">
+        <!-- 标题部分 -->
         <h3 style="color:#fff; margin:5px 0;">嵌入式AI应用开发实战指南</h3>
+        <!-- 描述部分 -->
         <p style="color:#fff; font-size:14px;">基于NNEWN系列板卡</p>
     </div>
+    
      <!-- 搜索框部分 -->
      <div style="margin-top:10px;">
         {{ super() }} {# 保留Sphinx默认搜索框 #}
     </div>
 </div>
 {% endblock %}
+
+
+
+
+
+
 
 
