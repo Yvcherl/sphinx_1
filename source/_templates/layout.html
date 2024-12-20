@@ -3,17 +3,29 @@
 
 {# 在每个页面顶部插入自定义HTML #}
 {% block content %}
-<div style="background-color:#f8f9fa; padding:20px; text-align:center; border:1px solid #e3e3e3; border-radius:5px; margin-bottom:20px;">
-    <img src="{{ pathto('_static/nnewn.png', 1) }}" alt="LubanCat" style="height:80px;"/>
-    <h3 style="color:#007bff; margin:10px 0;">嵌入式AI应用开发实战指南</h3>
-    <div style="margin:10px;">
-        <a href="https://www.baidu.com" style="text-decoration:none; margin:0 10px; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;">产品规格书</a>
-        <a href="https://www.baidu.com" style="text-decoration:none; margin:0 10px; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;">PDF文档</a>
-        <a href="https://www.baidu.com" style="text-decoration:none; margin:0 10px; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;">配套程序</a>
-        <a href="https://www.baidu.com" style="text-decoration:none; margin:0 10px; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;">立即购买</a>
+
+<div style="background-color:#f8f9fa; padding:20px; text-align:left; border:1px solid #e3e3e3; border-radius:5px; margin-bottom:20px; display:flex; align-items:flex-start; gap:20px;">
+    <!-- 图片部分 -->
+    <img src="{{ pathto('_static/nnewn.png', 1) }}" alt="nnewn" style="height:100px; margin-top:20px;"/>
+
+    <!-- 文本部分 -->
+    <div style="display:flex; flex-direction:column; gap:10px; flex:1;">
+        <!-- 标题 -->
+        <h3 style="color:#007bff; margin:0;">嵌入式AI应用开发实战指南</h3>
+        
+        <!-- 按钮容器 -->
+        <div style="display:flex; gap:10px;">
+            <a href="https://www.baidu.com" style="text-decoration:none; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;">产品规格书</a>
+            <a href="https://www.baidu.com" style="text-decoration:none; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;">立即购买</a>
+        </div>
+        
+        <!-- 描述文字 -->
+        <p style="color:#666; margin:0;">以人工智能深度学习为主题，牛新牛上进行相关AI开发。</p>
     </div>
-    <p style="color:#666; margin:10px;">以人工智能深度学习为主题，牛新牛上进行相关AI开发。</p>
 </div>
+
+
+
 {{ super() }}
 {% endblock %}
 
@@ -27,21 +39,11 @@
         </a>
         <a href="https://www.example2.com" target="_blank" title="聊天">
             <img src="{{ pathto('_static/chat.png', 1) }}" alt="Chat" style="width:30px; height:30px;">
-        </a>
-        <a href="https://www.example3.com" target="_blank" title="Google">
-            <img src="{{ pathto('_static/logo-black.svg', 1) }}" alt="Google" style="width:30px; height:30px;">
-        </a>
-        <a href="https://github.com/example" target="_blank" title="GitHub">
-            <img src="{{ pathto('_static/github.png', 1) }}" alt="GitHub" style="width:30px; height:30px;">
-        </a>
-        <a href="https://www.example4.com" target="_blank" title="PDF">
-            <img src="{{ pathto('_static/pdf.png', 1) }}" alt="PDF" style="width:30px; height:30px;">
-        </a>
-    </div> #}
+        #}
     <!-- 标题部分 -->
     <div style="margin-top:10px; text-align: center;">
         <!-- 图片部分 -->
-        <img src="_static/nnewn.png" alt="牛新牛" 
+        <img src="{{ pathto('_static/nnewn.png', 1) }}" alt="牛新牛" 
              style="border-radius: 0; width: auto; height: auto; max-width: 100%; display: inline-block;">
         <!-- 标题部分 -->
         <h3 style="color:#fff; margin:5px 0;">嵌入式AI应用开发实战指南</h3>
@@ -55,6 +57,9 @@
     </div>
 </div>
 {% endblock %}
+
+
+
 
 
 

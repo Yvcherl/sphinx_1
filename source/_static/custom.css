@@ -1,0 +1,30 @@
+/* 修改文字大小和颜色 */
+div.wy-side-nav-search span.icon.home + a {
+    font-size: 50px; /* 调整文字大小 */
+    color: #fafafa;  /* 修改文字颜色 */
+    font-weight: bold; /* 加粗文字（可选） */
+}
+
+/* 如果需要文字居中对齐 */
+div.wy-side-nav-search span.icon.home + a {
+    display: block;
+    text-align: center;
+}
+
+/* 添加一些额外的间距（如果需要） */
+div.wy-side-nav-search span.icon.home + a {
+    margin-top: 10px; /* 调整上方间距 */
+    margin-bottom: 10px; /* 调整下方间距 */
+}
+
+/* 隐藏默认分隔符 */
+.wy-breadcrumbs .breadcrumb .divider {
+    display: none; /* 隐藏默认的分隔符 */
+}
+
+/* 添加新的分隔符 */
+.wy-breadcrumbs .breadcrumb a::after {
+    content: " >>"; /* 替换为你的分隔符 */
+   
+    margin: 0 5px;
+}
