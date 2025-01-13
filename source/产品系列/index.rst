@@ -2,8 +2,9 @@
 =================================
  
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: 产品
+   
 
    R100
    R600

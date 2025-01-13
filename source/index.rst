@@ -11,20 +11,28 @@
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: 人工智能核心板
 
    产品系列/index
    
+
+
+
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: 通用拓展板
 
    通用拓展板系列/index
 
 
+.. toctree::
+   :maxdepth: 1
+   :caption: 固件烧录文档
 
-
+   
+   固件烧录/固件烧录
+   固件烧录/系统启动登录
 
    
    

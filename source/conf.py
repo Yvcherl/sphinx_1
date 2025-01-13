@@ -14,7 +14,8 @@ release = 'test1.0'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['recommonmark','sphinx_markdown_tables']
+extensions = ['recommonmark','sphinx_markdown_tables',  'sphinx_rtd_theme']
+source_suffix = ['.rst', '.md']
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -35,5 +36,4 @@ html_css_files = [
 html_title = "嵌入式AI应用开发实战指南"
 
 html_show_sourcelink = False
-
 
