@@ -8,22 +8,20 @@
 
 这是我们公司的网站：`公司主页 <http://www.nnewn.com/>`_。
 
+网页跳转pdf
 
+.. raw:: html
 
-.. toctree::
-   :maxdepth: 1
-   :caption: 人工智能核心板
-
-   产品系列/index
-   
+   <a href="https://yvcherl.github.io/newpdf" target="_blank" style="margin-bottom: 20px; display: inline-block;">软件开发指南</a>
 
 
 
 .. toctree::
    :maxdepth: 1
-   :caption: 通用拓展板
+   :caption: 软件开发指南
 
-   通用拓展板系列/index
+   Rockchip_Developer_Guide_Linux_Software_CN
+
 
 
 .. toctree::
@@ -32,8 +30,16 @@
 
    
    固件烧录/固件烧录
-   固件烧录/系统启动登录
 
-   
-   
+.. toctree::
+   :maxdepth: 1
+   :caption: common
+
+   common/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: linux
+
+   linux/index
 

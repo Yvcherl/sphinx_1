@@ -7,15 +7,18 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'nnewn'
-copyright = '2024, nnewn-css'
-author = 'nnewn-css'
+copyright = '2024, nnewn'
+author = 'nnewn'
 release = 'test1.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['recommonmark','sphinx_markdown_tables',  'sphinx_rtd_theme']
-source_suffix = ['.rst', '.md']
+extensions = ['sphinx_markdown_tables',  'sphinx_rtd_theme','myst_parser']
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 templates_path = ['_templates']
 exclude_patterns = []
