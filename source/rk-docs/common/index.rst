@@ -3,7 +3,8 @@ Common
 
 .. toctree::
    :maxdepth: 1
-
+   
+   AMP/index
    GMAC/index
    UART/index
    CAN/index

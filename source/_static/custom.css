@@ -1,3 +1,6 @@
-h2 {
-    display: none;
+/* 隐藏移动端 */
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
 }

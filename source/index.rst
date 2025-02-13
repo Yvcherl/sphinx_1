@@ -18,9 +18,9 @@
 
 .. toctree::
    :maxdepth: 1
-   :caption: 软件开发指南
+   :caption: rk-docs
 
-   Rockchip_Developer_Guide_Linux_Software_CN
+   rk-docs/index
 
 
 
@@ -28,18 +28,8 @@
    :maxdepth: 1
    :caption: 固件烧录文档
 
-   
    固件烧录/固件烧录
+   
 
-.. toctree::
-   :maxdepth: 1
-   :caption: common
 
-   common/index
-
-.. toctree::
-   :maxdepth: 1
-   :caption: linux
-
-   linux/index
 

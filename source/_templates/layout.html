@@ -3,8 +3,15 @@
 
 {# 在每个页面顶部插入自定义HTML #}
 {% block content %}
+<style>
+    @media only screen and (max-width: 1008px) {
+        .hide-on-mobile {
+            display: none;
+        }
+    }
+</style>
 
-<div style="background-color:#f8f9fa; padding:20px; text-align:left; border:1px solid #e3e3e3; border-radius:5px; margin-bottom:20px; display:flex; align-items:flex-start; gap:20px;">
+<div class="hide-on-mobile" style="background-color:#f8f9fa; padding:20px; text-align:left; border:1px solid #e3e3e3; border-radius:5px; margin-bottom:20px; display:flex; align-items:flex-start; gap:20px;">
     <!-- 图片部分 -->
     <img src="{{ pathto('_static/nnewn.png', 1) }}" alt="nnewn" style="height:100px; margin-top:20px;"/>
 

@@ -333,6 +333,7 @@ Rockchip平台eMMC颗粒支持列表，详见<SDK>/docs/cn/Common/AVL目录下�
 
 ![](Rockchip_Developer_Guide_Linux_Software_CN_pic/media/image1.png)
 
+
 > 图1‐1 eMMC Performance⽰例
 
 ######## 3.1.2.3 SPI Nor及SLC Nand支持列表

@@ -32,9 +32,7 @@ html_theme = 'sphinx_rtd_theme'
 
 
 html_static_path = ['_static']
-html_css_files = [
-    '_static/custom.css'  # 确保这里引用了自定义的 CSS 文件
-]
+html_css_files = ['custom.css']  # 确保这里引用了自定义的 CSS 文件
 
 html_title = "嵌入式AI应用开发实战指南"
 
