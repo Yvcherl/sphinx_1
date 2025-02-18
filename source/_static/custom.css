@@ -1,5 +1,5 @@
 /* 隐藏移动端 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     .hide-on-mobile {
         display: none !important;
     }

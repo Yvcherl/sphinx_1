@@ -20,3 +20,9 @@
    :caption: linux
 
    linux/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: others
+
+   others/index
