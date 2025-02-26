@@ -11,65 +11,53 @@
     }
 </style>
 
-<div class="hide-on-mobile" style="background-color:#f8f9fa; padding:20px; text-align:left; border:1px solid #e3e3e3; border-radius:5px; margin-bottom:20px; display:flex; align-items:flex-start; gap:20px;">
+<div class="hide-on-mobile" style="background-color:#f8f9fa; 
+                                    padding:20px; 
+                                    text-align:left; 
+                                    border:1px solid #e3e3e3; 
+                                    border-radius:5px; 
+                                    margin-top: -20px;
+                                    margin-bottom:20px; 
+                                    display:flex; 
+                                    align-items:flex-start; 
+                                    gap:20px;">
     <!-- 图片部分 -->
-    <img src="{{ pathto('_static/nnewn.png', 1) }}" alt="nnewn" style="height:100px; margin-top:20px;"/>
+    <img src="{{ pathto('_static/nnewn.png', 1) }}" alt="NNEWN TECH" style="height:80px; margin-top:10px;"/>
 
     <!-- 文本部分 -->
     <div style="display:flex; flex-direction:column; gap:10px; flex:1;">
         <!-- 标题 -->
-        <h3 style="color:#007bff; margin:0;">嵌入式AI应用开发实战指南</h3>
+        <h1 style="color:#007bff; margin:0;">NNEWN-文档中心</h1>
         
         <!-- 按钮容器 -->
         <div style="display:flex; gap:10px;">
-            <a href="http://www.nnewn.com/Product" style="text-decoration:none; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;">产品规格书</a>
-            <a href="https://nnewn.taobao.com/" style="text-decoration:none; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;">立即购买</a>
+            <a href="http://www.nnewn.com" style="text-decoration:none; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;"  target="_blank">公司官网</a>
+            <a href="https://nnewn.taobao.com" style="text-decoration:none; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;"  target="_blank">在线购买</a>
+            <a href="https://work.weixin.qq.com/kfid/kfc04b5ffb556109a43" style="text-decoration:none; display:inline-block; padding:8px 15px; background-color:#007bff; color:#fff; border-radius:5px;" target="_blank">微信联系</a>
         </div>
         
         <!-- 描述文字 -->
-        <p style="color:#666; margin:0;">以人工智能深度学习为主题，牛新牛上进行相关AI开发。</p>
+        
+        <p style="color:#666; margin:0;">专业、便捷、高效，给您开箱即用的开发体验！</p>
     </div>
 </div>
-
 
 
 {{ super() }}
 {% endblock %}
 
-{% block sidebartitle %}
-
-<div style=" padding:10px; text-align:center; border-radius:5px;">
-    <!-- 图标链接 -->
-   {# <div style="display:flex; justify-content:space-around; align-items:center;">
-        <a href="https://www.example1.com" target="_blank" title="主页">
-            <img src="{{ pathto('_static/home.png', 1) }}" alt="Home" style="width:30px; height:30px;">
-        </a>
-        <a href="https://www.example2.com" target="_blank" title="聊天">
-            <img src="{{ pathto('_static/chat.png', 1) }}" alt="Chat" style="width:30px; height:30px;">
-        #}
-    <!-- 标题部分 -->
-    <div style="margin-top:10px; text-align: center;">
-        <!-- 图片部分 -->
-        <img src="{{ pathto('_static/nnewn.png', 1) }}" alt="牛新牛" 
-             style="border-radius: 0; width: auto; height: auto; max-width: 100%; display: inline-block;">
-        <!-- 标题部分 -->
-        <h3 style="color:#fff; margin:5px 0;">嵌入式AI应用开发实战指南</h3>
-        <!-- 描述部分 -->
-        <p style="color:#fff; font-size:14px;">基于NNEWN系列板卡</p>
-    </div>
-    
-     <!-- 搜索框部分 -->
-     <div style="margin-top:10px;">
-        {{ super() }} {# 保留Sphinx默认搜索框 #}
-    </div>
-</div>
+{% block extrahead %}
+  <!-- 自定义CSS -->
+  <link rel="stylesheet" href="{{ pathto('_static/custom.css', 1) }}">
 {% endblock %}
 
-
-
-
-
-
+{% block sidebartitle %}
+  <div class="header-custom">
+    <span class="main-title">NNEWN-文档中心</span><br> 
+    <span class="header-subtitle">商务合作请联系 kwf@nnewn.com</span>
+  </div>
+  {{ super() }}
+{% endblock %}
 
 
 
